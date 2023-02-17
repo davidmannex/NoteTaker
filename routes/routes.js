@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-
+console.log("routes");
 module.exports = app => {
     fs.readFile("db/db.json","utf8", (err, data) => {
     var notes = JSON.parse(data);

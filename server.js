@@ -14,7 +14,7 @@ app.use(express.static(__dirname));
 
 // Require routes files 
 require('./routes/routes.js')(app);
-
+console.log("server");
 // Setup listener
 app.listen(PORT, function() {
     console.log("App listening on PORT: " + PORT);
